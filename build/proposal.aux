@@ -1,0 +1,57 @@
+\relax 
+\citation{lecture-notes-mount}
+\citation{lecture_notes_professor}
+\citation{delaunay_to_voronoi}
+\citation{delaunay_to_voronoi}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Voronoi Diagrams and Delaunay Triangulations}{1}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A Voronoi diagram in $\mathbb  {R}^2$ for five sample sites. Each shaded cell contains the points closest to its generating site.}}{1}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:voronoi-example}{{1}{1}{}{figure.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The Delaunay triangulation dual to Figure~\ref {fig:voronoi-example}. Two sites are connected when their Voronoi cells share an edge.}}{2}{}\protected@file@percent }
+\newlabel{fig:delaunay-example}{{2}{2}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Phonons}{2}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Reciprocal Lattices and Brillouin Zones}{2}{}\protected@file@percent }
+\citation{delaunay_to_voronoi}
+\citation{lecture-notes-mount}
+\citation{lecture_notes_professor}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Computing Voronoi Diagrams in $\mathbb  {R}^3$}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Predicates}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Orientation Test}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}In-Sphere Test}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Half-Faces and their Alignment}{3}{}\protected@file@percent }
+\citation{muckeFastRandomizedPoint}
+\citation{delaunay_to_voronoi}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Incremental Construction Algorithm for Delaunay Triangulations}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Computing Voronoi Diagrams from Delaunay Triangulations}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Data Structures for Representing Delaunay Triangulations and Voronoi Diagrams}{4}{}\protected@file@percent }
+\citation{delaunay_to_voronoi}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Taking the Dual of a Delaunay Triangulation}{5}{}\protected@file@percent }
+\citation{lecture-notes-mount}
+\citation{lecture_notes_professor}
+\bibstyle{plain}
+\bibdata{comp_geo}
+\bibcite{delaunay_to_voronoi}{1}
+\bibcite{lecture-notes-mount}{2}
+\bibcite{muckeFastRandomizedPoint}{3}
+\bibcite{lecture_notes_professor}{4}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Duality between Delaunay simplices and Voronoi simplices. A Delaunay simplex gives a Voronoi vertex, a shared Delaunay face gives a Voronoi edge, a Delaunay edge gives a Voronoi face, and a Delaunay vertex gives an entire Voronoi cell.}}{6}{}\protected@file@percent }
+\newlabel{fig:dual-examples}{{3}{6}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Setting up the Reciprocal Lattice and Computing the Brillouin Zone}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Algorithms}{6}{}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Finding the Tetrahedron Containing a Point in a Delaunay Triangulation  \hspace  *{1em}\textbf  {Input:} A Delaunay triangulation $T$ of a point set $P$ in $\mathbb  {R}^3$, and a point $p$ to be located. \hspace  *{1em}\textbf  {Output:} The tetrahedron $t$ in $T$ that contains the point $p$.}}{7}{}\protected@file@percent }
+\newlabel{alg:find_containing_tetrahedron}{{1}{7}{}{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Insertion of a Point into a Delaunay Triangulation  \hspace  *{1em}\textbf  {Input:} A current Delaunay triangulation $T$ of a point set $P$ in $\mathbb  {R}^3$, and a new point $p$ to be inserted. \hspace  *{1em}\textbf  {Output:} An updated Delaunay triangulation $T'$ that includes the new point $p$.}}{8}{}\protected@file@percent }
+\newlabel{alg:insert_point_delaunay}{{2}{8}{}{algorithm.2}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces Constructing a Delaunay Triangulation  \hspace  *{1em}\textbf  {Input:} A point set $P$ in $\mathbb  {R}^3$. \hspace  *{1em}\textbf  {Output:} A Delaunay triangulation $T$ of $P$.}}{8}{}\protected@file@percent }
+\newlabel{alg:construct_delaunay}{{3}{8}{}{algorithm.3}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Computing the Voronoi Diagram from a Delaunay Triangulation   \hspace  *{1em}\textbf  {Input:} A Delaunay triangulation $T$ of a point set $P$ in $\mathbb  {R}^3$. \hspace  *{1em}\textbf  {Output:} The Voronoi diagram $V$ of the point set $P$.}}{9}{}\protected@file@percent }
+\newlabel{alg:delaunay_to_voronoi}{{4}{9}{}{algorithm.4}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces Setting Up a Reciprocal Lattice  \hspace  *{1em}\textbf  {Input:} A Bravais lattice type $L$, lattice parameters $a,b,c,\alpha ,\beta ,\gamma $, and an index range $r$. \hspace  *{1em}\textbf  {Output:} A finite reciprocal lattice point set $P$, together with direct basis vectors $a_1,a_2,a_3$ and reciprocal basis vectors $b_1,b_2,b_3$.}}{10}{}\protected@file@percent }
+\newlabel{alg:setup_reciprocal_lattice}{{5}{10}{}{algorithm.5}{}}
+\newlabel{LastPage}{{A}{10}{}{algorithm.5}{}}
+\gdef\lastpage@lastpage{10}
+\gdef\lastpage@lastpageHy{}
+\xdef \mintedoldcachechecksum{\detokenize{\minted@cachechecksum }}
+\gdef \@abspage@last{10}
