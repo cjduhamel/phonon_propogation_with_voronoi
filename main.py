@@ -571,7 +571,7 @@ def plot_brillouin_zone(voronoi_diagram, reciprocal_points=None):
 if __name__ == "__main__":
     # Generate a reciprocal lattice for a Brillouin zone example
     points, direct_basis, reciprocal_basis = generate_brillouin_zone_example(
-        "tetragonal body centered",
+        "orthorhombic primitive",
         index_range=1,
         a=1.0,
     )
