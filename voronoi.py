@@ -1,6 +1,6 @@
 from delaunay import edge
 
-
+#private helper functions
 def _edge_key(v1, v2):
     return tuple(sorted((v1, v2), key=lambda v: (v.x, v.y, v.z)))
 
@@ -63,7 +63,7 @@ def _order_tetrahedra_around_edge(incident_tetrahedra, edge_vertices):
 
     return ordered
 
-
+# Main function
 def extract_voronoi_from_delaunay(tetrahedra):
     """
     Extract the finite pieces of the Voronoi diagram dual to a Delaunay
